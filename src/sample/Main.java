@@ -1,5 +1,6 @@
 package sample;
 
+import Util.HibernateUtil;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -14,6 +15,7 @@ public class Main extends Application {
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
+        primaryStage.onCloseRequestProperty(event -> HibernateUtil.getSession().close());
     }
 
 

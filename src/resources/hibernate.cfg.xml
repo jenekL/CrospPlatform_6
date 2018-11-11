@@ -9,14 +9,16 @@
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="connection.username">root</property>
         <property name="connection.password">123ALOALOPRIVATEnetrogayte123</property>
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">update</property>
 
-        <mapping resource="TclientsEntity.hbm.xml"/>
-        <mapping class="Entities.TclientsEntity"/>
-        <mapping resource="TsellEntity.hbm.xml"/>
-        <mapping class="Entities.TsellEntity"/>
-        <mapping resource="TzakupkaEntity.hbm.xml"/>
-        <mapping class="Entities.TzakupkaEntity"/>
-        <!-- <property name="connection.username"/> -->
+         <mapping resource="TclientsEntity.hbm.xml"/>
+         <mapping class="Entities.TclientsEntity"/>
+         <mapping resource="TsellEntity.hbm.xml"/>
+         <mapping class="Entities.TsellEntity"/>
+         <mapping resource="TzakupkaEntity.hbm.xml"/>
+         <mapping class="Entities.TzakupkaEntity"/>
+         <!-- <property name="connection.username"/> -->
         <!-- <property name="connection.password"/> -->
 
         <!-- DB schema will be updated if needed -->
