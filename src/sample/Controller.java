@@ -145,7 +145,7 @@ public class Controller {
         setTbvw3();
 
         addbtn1.setOnAction(actionEvent -> {
-            if(!nametxtf.getText().equals("") || !pricetxtf.equals("") || !edtxtf.equals("")) {
+            if(!nametxtf.getText().equals("") || !pricetxtf.getText().equals("") || !edtxtf.getText().equals("")) {
                 TzakupkaEntity tzakupkaEntity = new TzakupkaEntity();
                 tzakupkaEntity.setNamee(nametxtf.getCharacters().toString());
                 tzakupkaEntity.setPrice(Double.parseDouble(pricetxtf.getCharacters().toString()));
@@ -163,7 +163,7 @@ public class Controller {
         });
 
         addbtn11.setOnAction(actionEvent -> {
-            if(!firmtxtf.getText().equals("") || !coutrytxtf.equals("") || !adresstxtf.equals("") || !telephonetxtf.equals("")) {
+            if(!firmtxtf.getText().equals("") || !coutrytxtf.getText().equals("") || !adresstxtf.getText().equals("") || !telephonetxtf.equals("")) {
 
                 TclientsEntity tclientsEntity = new TclientsEntity();
                 tclientsEntity.setFirm(firmtxtf.getCharacters().toString());
@@ -182,7 +182,7 @@ public class Controller {
         });
 
         addbtn12.setOnAction(actionEvent -> {
-            if(!datetxtf.getText().equals("") || !counttxtf.equals("") || !clientidtxtf.equals("") || !zakupkaidtxtf.equals("")) {
+            if(!datetxtf.getText().equals("") || !counttxtf.getText().equals("") || !clientidtxtf.getText().equals("") || !zakupkaidtxtf.equals("")) {
                 TsellEntity tsellEntity = new TsellEntity();
                 tsellEntity.setDatee(Timestamp.valueOf(datetxtf.getCharacters().toString()));
                 tsellEntity.setCounting(Integer.parseInt(counttxtf.getCharacters().toString()));
