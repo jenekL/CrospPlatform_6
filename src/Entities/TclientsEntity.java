@@ -78,6 +78,12 @@ public class TclientsEntity {
     }
 
     @Override
+    public String toString() {
+        super.toString();
+        return id + " " + firm + " " + country + " " + adress + " " + telephone;
+    }
+
+    @Override
     public int hashCode() {
         int result = id;
         result = 31 * result + (firm != null ? firm.hashCode() : 0);

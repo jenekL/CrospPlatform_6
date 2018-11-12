@@ -10,6 +10,21 @@ public class TsellEntity {
     private Timestamp datee;
     private Integer counting;
     private TclientsEntity tclientsByIdKlienta;
+    private TzakupkaEntity tzakupkaByIdTovara;
+
+//    public String getName(){
+//        return tzakupkaByIdTovara.getNamee();
+//    }
+//    public void setName(String name){
+//        tzakupkaByIdTovara.setNamee(name);
+//    }
+//
+//    public String getFirm(){
+//        return tclientsByIdKlienta.getFirm();
+//    }
+//    public void setFirm(String firm){
+//        tzakupkaByIdTovara.setNamee(firm);
+//    }
 
     @Id
     @Column(name = "id", nullable = false)
@@ -71,5 +86,15 @@ public class TsellEntity {
 
     public void setTclientsByIdKlienta(TclientsEntity tclientsByIdKlienta) {
         this.tclientsByIdKlienta = tclientsByIdKlienta;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "id_tovara", referencedColumnName = "id")
+    public TzakupkaEntity getTzakupkaByIdTovara() {
+        return tzakupkaByIdTovara;
+    }
+
+    public void setTzakupkaByIdTovara(TzakupkaEntity tzakupkaByIdTovara) {
+        this.tzakupkaByIdTovara = tzakupkaByIdTovara;
     }
 }

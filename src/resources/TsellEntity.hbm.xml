@@ -17,5 +17,8 @@
         <many-to-one name="tclientsByIdKlienta" class="Entities.TclientsEntity">
             <column name="id_klienta" not-null="true"/>
         </many-to-one>
+        <many-to-one name="tzakupkaByIdTovara" class="Entities.TzakupkaEntity">
+            <column name="id_tovara" not-null="true"/>
+        </many-to-one>
     </class>
 </hibernate-mapping>
